@@ -456,15 +456,17 @@
         }
         
         .project-links {
-            display: flex;
-            gap: 15px;
-        }
-        
+    position: relative;
+    z-index: 20;
+    gap: 15px;
+}
+
         .project-link {
-            color: var(--text);
-            transition: var(--transition);
-            font-size: 1.2rem;
+            pointer-events: auto !important;
+            cursor: pointer !important;
+            z-index: 20;
         }
+
         
         .project-link:hover {
             color: var(--primary);
@@ -854,100 +856,105 @@
 
     <!-- Projects Section -->
     <section id="projects">
-        <div class="container">
-            <div class="section-header">
-                <span class="section-number">03.</span>
-                <h2 class="section-title">Some Things I've Built</h2>
-            </div>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-folder">
-                            <i class="far fa-folder"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Deutsche Telekom</h3>
-                        <p class="project-description">
-                            Designing and implementing APIs for scalable, interoperable solutions across five channels, ensuring 95% compliance with TM Forum standards.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Java</span>
-                            <span class="tech-tag">Spring Boot</span>
-                            <span class="tech-tag">REST APIs</span>
-                            <span class="tech-tag">Microservices</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-folder">
-                            <i class="far fa-folder"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Open Fiber Exchange</h3>
-                        <p class="project-description">
-                            Designed and implemented a smart AI-powered chatbot using Google ADK and Gemini API 
-                            for contextual and intelligent user interactions.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">Node.js</span>
-                            <span class="tech-tag">Angular</span>
-                            <span class="tech-tag">Gemini API</span>
-                            <span class="tech-tag">AI/ML</span>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="project-card">
-                    <div class="project-header">
-                        <div class="project-folder">
-                            <i class="far fa-folder"></i>
-                        </div>
-                        <div class="project-links">
-                            <a href="#" class="project-link">
-                                <i class="fab fa-github"></i>
-                            </a>
-                            <a href="#" class="project-link">
-                                <i class="fas fa-external-link-alt"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="project-content">
-                        <h3 class="project-title">Portfolio Website</h3>
-                        <p class="project-description">
-                            A responsive portfolio website built with modern web technologies to showcase my projects 
-                            and skills as a software engineer.
-                        </p>
-                        <div class="project-tech">
-                            <span class="tech-tag">HTML</span>
-                            <span class="tech-tag">CSS</span>
-                            <span class="tech-tag">JavaScript</span>
-                            <span class="tech-tag">Responsive Design</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="container">
+        <div class="section-header">
+            <span class="section-number">03.</span>
+            <h2 class="section-title">I've worked on</h2>
         </div>
+
+        <div class="projects-grid">
+
+            <!-- Project 1 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-folder">
+                        <i class="far fa-folder"></i>
+                    </div>
+                    <div class="project-links">
+                        
+                        <a href="https://www.telekom.com/en "target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Deutsche Telekom</h3>
+                    <p class="project-description">
+                        Designing and implementing APIs for scalable, interoperable solutions across five channels,
+                        ensuring 95% compliance with TM Forum standards.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Java</span>
+                        <span class="tech-tag">Spring Boot</span>
+                        <span class="tech-tag">REST APIs</span>
+                        <span class="tech-tag">Microservices</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-folder">
+                        <i class="far fa-folder"></i>
+                    </div>
+                    <div class="project-links">
+                        
+                        <a href="https://www.prodapt.com/newsroom/prodapt-launches-openfibrexchange-to-accelerate-pan-uk-digital-connectivity/ "target="_blank" class="project-link">
+                            <i class="fas fa-external-link-alt"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Open Fiber Exchange</h3>
+                    <p class="project-description">
+                        Designed and implemented a smart AI-powered chatbot using Google ADK and Gemini API
+                        for contextual and intelligent user interactions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Angular</span>
+                        <span class="tech-tag">Gemini API</span>
+                        <span class="tech-tag">AI/ML</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project 3 (REPLACED Portfolio) -->
+            <div class="project-card">
+    <div class="project-header">
+        <div class="project-folder">
+            <i class="far fa-folder"></i>
+        </div>
+        <div class="project-links">
+            
+            <!-- Cloud Run Live Demo -->
+            <a href="https://github.com/zaibanikhat/FullStack-Sentinel" target="_blank" class="project-link">
+                <i class="fas fa-external-link-alt"></i>
+            </a>
+        </div>
+                </div>
+                <div class="project-content">
+                    <h3 class="project-title">Sentinel Support</h3>
+                    <p class="project-description">
+                        A full-stack transaction monitoring system with automated triage, alert scoring,
+                        customer insights, dispute workflows, model evaluations, and a built-in knowledge base
+                        for intelligent support decisions.
+                    </p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Node.js</span>
+                        <span class="tech-tag">Express</span>
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">SQLite</span>
+                        <span class="tech-tag">Docker</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
     </section>
+
 
     <!-- Contact Section -->
     <section id="contact">
@@ -993,10 +1000,10 @@
     <footer>
         <div class="container">
             <div class="social-links">
-                <a href="#" class="social-link">
+                <a href="https://github.com/zaibanikhat"target="_blank" class="social-link">
                     <i class="fab fa-github"></i>
                 </a>
-                <a href="https://www.linkedin.com/in/zaiba-nikhat-6877141a2/" class="social-link">
+                <a href="https://www.linkedin.com/in/zaiba-nikhat-6877141a2/"target="_blank" class="social-link">
                     <i class="fab fa-linkedin-in"></i>
                 </a>
                 <a href="#" class="social-link">
